@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="24sp"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="current"
+            android:textSize="24sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="peak"
+            android:textSize="24sp"
+            app:layout_columnWeight="1"/>
+        <TextView
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text="x"
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/x_current"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/x_peak"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text="y"
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/y_current"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/y_peak"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="z"
+            android:textSize="24sp"
+            app:layout_columnWeight="1" />
+        <TextView
+            android:id="@+id/z_current"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/z_peak"
+            android:layout_height="50dp"
+            app:layout_columnWeight="1"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
